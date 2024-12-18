@@ -10,7 +10,7 @@ int main()
     cout << "Введите количество натуральных чисел и матрицу" << endl;
     cin >> n;
     
-    fill_matrix(matrix, n);
+    fill_matrix_with_numbers(matrix, n);
     
     if (has_similar_rows) {
         change_mininmal_elements_in_columns(matrix, n, find_maximal_primal(matrix, n));
