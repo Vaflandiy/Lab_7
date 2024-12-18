@@ -14,7 +14,7 @@ int main()
     
     if (has_similar_rows) {
         change_mininmal_elements_in_columns(matrix, n, find_maximal_primal(matrix, n));
-        cout << endl;
+        cout << endl; // Создаю разделение, чтобы читать можно было нормально.
         print_matrix(matrix, n);
     }
 
