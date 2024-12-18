@@ -26,27 +26,27 @@ void fill_matrix_with_numbers(int matrix[100][100], int n)
 
 int has_similar_rows(int matrix[100][100], int n) 
 {
-    bool same = true;
+    bool same_rows = true;
     for (int i = 0; i < n; i = i + 1) 
     {
         for (int j = i + 1; j < n; j = j + 1) 
         {
             for (int k = 0; k < n; k = k + 1) 
             {
-                if (not same) 
+                if (not (same_rows)) 
                 {
                     break;
                 }
                 if (matrix[i][k] != matrix[j][k]) 
                 {
-                    same = false;
+                    same_rows = false;
                 }
             }
-            if (same) 
+            if (same_rows) 
             {
                 return true;
             }
-            same = true;
+            same_rows = true;
         }
     }
     return false;
