@@ -1,4 +1,4 @@
-void show_matrix(int matrix[100][100], int n); // Распечатыываю Матрицу
+void show_matrix(int matrix[100][100], int n); // Показываю матрицу по запросу
 void fill_matrix_with_numbers(int matrix[100][100], int n); // Заполняю Матрицу.
 int has_similar_rows(int matrix[100][100], int n); // Проверяю на наличие одинаковых рядов
 bool is_target_a_primal_number(int n); // Цель изучения - простое число? 
