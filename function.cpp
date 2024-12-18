@@ -51,7 +51,7 @@ void change_mininmal_elements_in_columns(int matrix[100][100], int n, int value)
     }
 }
 
-bool is_primal(int n) {
+bool is_target_a_primal_number(int n) {
     if (n <= 1) return false;
     if (n == 2) return true;
     for (int i = 2; i < ceil(sqrt(n)) + 1; i = i + 1) {
@@ -66,7 +66,7 @@ int find_maximal_primal(int matrix[100][100], int n) {
     int max = 0;
     for (int i = 0; i < n; i = i + 1) {
         for (int j = 0; j < n; j = j + 1) {
-            if (is_primal(matrix[i][j]) & max < matrix[i][j]) max = matrix[i][j];
+            if (is_target_a_primal_number(matrix[i][j]) & max < matrix[i][j]) max = matrix[i][j];
         }
     }
     return max;
